@@ -1,0 +1,52 @@
+
+.trans-fade {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.trans-fade-active {
+  opacity: 0;
+}
+
+.trans-height-50 {
+  max-height: 50px;
+  overflow-y: clip;
+  transition: max-height 0.5s;
+}
+.trans-height-50-active {
+  max-height: 0;
+}
+
+.trans-move-bg-n-fade-text {
+  background-position-x: 0%;
+  transition: background-position-x 0.5s, color 0.5s;
+}
+.trans-move-bg-n-fade-text-active {
+  background-position-x: 100%;
+  color: rgba(0,0,0,0);
+}
+
+.trans-move-bg-n-fade-text-bis {
+  background-position-x: 100%;
+  transition: background-position-x 0.8s ease-in-out, color 0.2s 0.37s;
+}
+.trans-move-bg-n-fade-text-bis-active {
+  background-position-x: 0%;
+  color: rgba(255,0,0,0);
+}
+
+.trans-shrink {
+  transition: font-size 0.5s;
+}
+.trans-shrink-active {
+  font-size: 0;
+}
+
+.trans-width-400 {
+  max-width: 400px;
+  white-space: nowrap;
+  overflow-x: clip;
+  transition: max-width 0.5s;
+}
+.trans-width-400-active {
+  max-width: 0;
+}

@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/2.0.6/grids-responsive-min.min.css" integrity="sha512-hL/zOmkRziE9y4nnqXhBXXJtTYZaAkxplhKC2xzS9vmia4emkDtgASBqW2InAiX2ljAqU53qRT1xyCixrX5H8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="demo.css">
     <link rel="stylesheet" href="../src/animations.css">
     <link rel="stylesheet" href="../src/transitions.css">
-    <link rel="stylesheet" href="demo.css">
   </head>
 
   <body>
@@ -23,6 +23,108 @@
       <h1>CSS Motion UX</h1>
 
       <p>Motion UX examples and inspirational ideas implemented with CSS</p>
+
+
+      <h2>Transitions</h2>
+
+      <div x-data="{ inputErrors: true }">
+        <button
+          class="pure-button pure-button-primary button-small float-right"
+          @click="inputErrors = !inputErrors"
+        ><span x-text="inputErrors ? 'Hide' : 'Show'"></span> errors</button>
+
+        <h3>Input errors</h3>
+
+        <form class="pure-form">
+          <div class="pure-g mb-2">
+            <div class="pure-u-1-3 text-right">
+              <div class="mr-3 pt-2">Fade</div>
+            </div>
+            <div class="pure-u-1-3">
+              <input type="email" class="w-100" placeholder="Write something" />
+            </div>
+            <div class="pure-u-1-3">
+              <div class="text-danger trans-fade ml-3 pt-2" x-bind:class="!inputErrors ? 'trans-fade-active' : ''">
+                Some error message
+              </div>
+            </div>
+          </div>
+
+          <div class="pure-g mb-2">
+            <div class="pure-u-1-3 text-right">
+              <div class="mr-3 pt-2">Width</div>
+            </div>
+            <div class="pure-u-1-3">
+              <input type="email" class="w-100" placeholder="Write something" />
+            </div>
+            <div class="pure-u-1-3">
+              <div
+                class="trans-width-400 ml-3 mt-1"
+                x-bind:class="!inputErrors ? 'trans-width-400-active' : ''"
+              >
+                <div class="alert-error">Some error message</div>
+              </div>
+            </div>
+          </div>
+          <div class="pure-g mb-2">
+            <div class="pure-u-1-3 text-right">
+              <div class="mr-3 pt-2">Move background &amp; Fade text</div>
+            </div>
+            <div class="pure-u-1-3">
+              <input type="email" class="w-100" placeholder="Write something" />
+            </div>
+            <div class="pure-u-1-3">
+              <div
+                class="gradient-error trans-move-bg-n-fade-text ml-3 h-100"
+                x-bind:class="!inputErrors ? 'trans-move-bg-n-fade-text-active' : ''"
+              >
+                <div class="pt-2">Some error message</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pure-g mb-2">
+            <div class="pure-u-1-3 text-right">
+              <div class="mr-3 pt-2">Move background &amp; Fade text (bis)</div>
+            </div>
+            <div class="pure-u-1-3">
+              <input type="email" class="w-100" placeholder="Write something" />
+            </div>
+            <div class="pure-u-1-3">
+              <div
+                class="gradient-error-bis trans-move-bg-n-fade-text-bis ml-3 h-100"
+                x-bind:class="!inputErrors ? 'trans-move-bg-n-fade-text-bis-active' : ''"
+              >
+                <div class="pt-2">Some error message</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pure-g mb-2">
+            <div class="pure-u-1-3 text-right">
+              <div class="mr-3 pt-2">Shrink text</div>
+            </div>
+            <div class="pure-u-1-3">
+              <input type="email" class="w-100" placeholder="Write something" />
+              <div class="text-danger trans-shrink" x-bind:class="!inputErrors ? 'trans-shrink-active' : ''">
+                Some error message
+              </div>
+            </div>
+          </div>
+
+          <div class="pure-g mb-2">
+            <div class="pure-u-1-3 text-right">
+              <div class="mr-3 pt-2">Height</div>
+            </div>
+            <div class="pure-u-1-3">
+              <input type="email" class="w-100" placeholder="Write something" />
+              <div class="trans-height-50 pt-1" x-bind:class="!inputErrors ? 'trans-height-50-active' : ''">
+                <div class="alert-error">Some error message</div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
 
       <h2>Animations</h2>
 
