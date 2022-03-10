@@ -1,0 +1,54 @@
+
+.anim-beat-bg-blue,
+.anim-beat-bg-blue:hover {
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-name: anim-beat-bg-blue-keyframes;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
+
+@keyframes anim-beat-bg-blue-keyframes {
+  0% { background-color: #0078e7; }
+  100% { background-color: #4b7ead; }
+}
+
+.anim-pendulum-blue,
+.anim-pendulum-blue:hover {
+  background: linear-gradient(90deg, #4b7ead 35%, #0078e7 50%, #4b7ead 65%);
+  background-size: 320% 100%;
+
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: anim-pendulum-keyframes;
+  animation-timing-function: linear;
+}
+
+@keyframes anim-pendulum-keyframes {
+  0% { background-position-x: 0%; }
+  50% { background-position-x: 100%; }
+  100% { background-position-x: 0%; }
+}
+
+.anim-stripes-blue,
+.anim-stripes-blue:hover {
+  background: linear-gradient(90deg,
+    #4b7ead 4%, #0078e7 10%, #4b7ead 16%,
+    #4b7ead 24%, #0078e7 30%, #4b7ead 36%,
+    #4b7ead 44%, #0078e7 50%, #4b7ead 56%,
+    #4b7ead 64%, #0078e7 70%, #4b7ead 76%,
+    #4b7ead 84%, #0078e7 90%, #4b7ead 96%);
+  background-size: 200% 100%;
+
+  animation-direction: normal;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-name: anim-stripes-keyframes;
+  animation-timing-function: linear;
+}
+
+@keyframes anim-stripes-keyframes {
+  0% { background-position: 40% 0%; }
+  100% { background-position: 0% 0%; }
+}
+

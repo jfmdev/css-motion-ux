@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Motion UX</title>
+
+    <!-- Alphine.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.9.0/cdn.min.js" integrity="sha512-91GIHlafcLQRUuQqlBCEF/qOecSTcBkSsaPWP3jgstLpwZ8orjgDlPgJshIq+x9t8wFcrGEjUKSMRN3K5ibq6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Pure CSS -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/2.0.6/pure-min.css" integrity="sha512-/VectwrK3cVMbl6IFsHj/O+fbxfLQm5rved2LR8HnaNuIL6fs8yBXNSi25hhQCB2713sc3Cbh5a4wLRSsZvDxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/2.0.6/grids-responsive-min.min.css" integrity="sha512-hL/zOmkRziE9y4nnqXhBXXJtTYZaAkxplhKC2xzS9vmia4emkDtgASBqW2InAiX2ljAqU53qRT1xyCixrX5H8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../src/animations.css">
+    <link rel="stylesheet" href="../src/transitions.css">
+    <link rel="stylesheet" href="demo.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>CSS Motion UX</h1>
+
+      <p>Motion UX examples and inspirational ideas implemented with CSS</p>
+
+      <h2>Animations</h2>
+
+      <div x-data="{ busyBtns: true }">
+        <form class="pure-form float-right">
+          <fieldset>
+            <label for="input_busy-btns">
+              <input type="checkbox" id="input_busy-btns" x-model="busyBtns" /> Busy
+            </label>
+          </fieldset>
+        </form>
+
+        <h3>Busy buttons</h3>
+
+        <blockquote>
+          When working with buttons that trigger asynchrounous actions, adding an animation to them is a more
+          stylish alternative to just disabling the button (also, disabling buttons is bad for accessibility,
+          since disabled buttons can't be focused).
+        </blockquote>
+
+        <div class="pure-g">
+          <div class="pure-u-1-6">
+            <p><em>No animation</em></p>
+            <button class="pure-button pure-button-primary">Submit</button>
+          </div>
+
+          <div class="pure-u-1-6">
+            <p>Beat</p>
+            <button
+              class="pure-button pure-button-primary"
+              x-bind:class="busyBtns ? 'anim-beat-bg-blue not-allowed' : ''"
+            >Submit</button>
+          </div>
+
+          <div class="pure-u-1-6">
+            <p>Pendulum</p>
+            <button
+              class="pure-button pure-button-primary"
+              x-bind:class="busyBtns ? 'anim-pendulum-blue not-allowed' : ''"
+            >Submit</button>
+          </div>
+
+          <div class="pure-u-1-6">
+            <p>Stripes</p>
+            <button
+              class="pure-button pure-button-primary"
+              x-bind:class="busyBtns ? 'anim-stripes-blue not-allowed' : ''"
+            >Submit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="fork-on-github"><a href="https://github.com/jfmdev/css-motion-ux">Fork me on GitHub</a></div>
+  </body>
+</html>

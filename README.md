@@ -2,7 +2,7 @@
 
 Motion UX examples and inspirational ideas implemented with CSS
 
-[Live demo](https://jfmdev.github.io/css-motion-ux/)
+[Live demo](https://jfmdev.github.io/css-motion-ux/docs/)
 
 ## Features
 
