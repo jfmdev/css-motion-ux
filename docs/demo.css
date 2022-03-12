@@ -17,64 +17,6 @@ p {
   margin-bottom: 0.2em;
 }
 
-/* --- Generics --- */
-
-.float-right {
-  float: right;
-}
-
-.h-100 {
-  height: 100%;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.not-allowed {
-  cursor: not-allowed;
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.text-danger {
-  color: #f00;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.w-100 {
-  width: 100%;
-}
-
 /* --- Customs --- */
 
 .alert-error {
@@ -113,6 +55,85 @@ p {
   background-size: 300% 100%;
   color: #f00;
   padding-left: 4px;
+}
+
+/* --- Utilities --- */
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.float-right {
+  float: right;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.text-danger {
+  color: #f00;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 /* --- Fork ribbon --- */

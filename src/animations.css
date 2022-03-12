@@ -7,10 +7,21 @@
   animation-timing-function: ease-out;
   animation-direction: alternate;
 }
-
 @keyframes anim-beat-bg-blue-keyframes {
   0% { background-color: #0078e7; }
   100% { background-color: #4b7ead; }
+}
+
+.anim-beat-font-size {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: anim-beat-font-size-keyframes;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes anim-beat-font-size-keyframes {
+  0% { font-size: 12px; line-height: 18px;}
+  100% { font-size: 16px; line-height: 16px }
 }
 
 .anim-pendulum-blue,
@@ -23,11 +34,34 @@
   animation-name: anim-pendulum-keyframes;
   animation-timing-function: linear;
 }
-
 @keyframes anim-pendulum-keyframes {
   0% { background-position-x: 0%; }
   50% { background-position-x: 100%; }
   100% { background-position-x: 0%; }
+}
+
+.anim-tilt-bg-red {
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-name: anim-tilt-bg-red-keyframes;
+  animation-timing-function: linear;  
+}
+@keyframes anim-tilt-bg-red-keyframes {
+  0% { background-color: #fcc; }
+  50% { background-color: #faa; }
+  100% { background-color: #fcc; }
+}
+
+.anim-tilt-outline-red {
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-name: anim-tilt-outline-red-keyframes;
+  animation-timing-function: linear;  
+}
+@keyframes anim-tilt-outline-red-keyframes {
+  0% { color: #f00; border-color: #f00; }
+  50% { color: #800; border-color: #800; }
+  100% { color: #f00; border-color: #f00; }
 }
 
 .anim-stripes-blue,
@@ -46,9 +80,7 @@
   animation-name: anim-stripes-keyframes;
   animation-timing-function: linear;
 }
-
 @keyframes anim-stripes-keyframes {
   0% { background-position: 40% 0%; }
   100% { background-position: 0% 0%; }
 }
-

@@ -177,6 +177,47 @@
         </div>
       </div>
 
+      <div x-data="{ impNotices: true }">
+        <form class="pure-form float-right">
+          <fieldset>
+            <label for="input_imp-notices">
+              <input type="checkbox" id="input_imp-notices" x-model="impNotices" /> Bring out
+            </label>
+          </fieldset>
+        </form>
+
+        <h3>Important notices</h3>
+
+        <div class="mb-2">
+          <div
+            class="alert-error px-2 d-inline-block"
+            x-bind:class="impNotices ? 'anim-tilt-outline-red' : ''"
+          >
+            This is an important message
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <div
+            class="alert-error px-2 d-inline-block"
+            x-bind:class="impNotices ? 'anim-tilt-bg-red' : ''"
+          >
+            This is an important message
+          </div>
+        </div>
+
+        <div class="mb-2 pos-rel" style="height: 20px;">
+          <div
+            style="height: 20px; width: 210px;"
+            class="alert-error px-2 d-inline-block text-center pos-abs"
+            x-bind:class="impNotices ? 'anim-beat-font-size' : ''"
+          >
+            This is an important message
+          </div>
+        </div>
+      </div>
+
+      <p>&nbsp;</p>
     </div>
 
     <div id="fork-on-github"><a href="https://github.com/jfmdev/css-motion-ux">Fork me on GitHub</a></div>
