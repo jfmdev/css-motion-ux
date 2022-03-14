@@ -7,6 +7,17 @@
   opacity: 0;
 }
 
+.trans-fade-down {
+  opacity: 1;
+  position: relative;
+  top: 0;
+  transition: opacity 0.5s, top 0.5s;
+}
+.trans-fade-down-active {
+  opacity: 0;
+  top: 12px;
+}
+
 .trans-height-50 {
   max-height: 50px;
   overflow-y: clip;
